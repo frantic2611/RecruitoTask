@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+<div class="form-div">
+ <form action="{% url 'greeting' %}" method="get" class="form">
+     <p>
+         <label for="name">Type your name</label>
+         <input type="text" name="name" id="name" class="input-container">
+     </p>
+
+     <p>
+        <label for="message">Type your message</label>
+        <input type="text" name="message" id="message" class="input-container">
+     </p>
+
+        <button type="submit" class="button-send-form">Send the form</button>
+    </form>
+</div>
+</body>
+</html>
